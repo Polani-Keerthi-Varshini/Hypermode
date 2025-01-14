@@ -1,30 +1,5 @@
 # Hypermode
-Arg is an AI-powered debate platform built for the ModusHack Hackathon. It allows users to choose debate topics, assign AI personas, and watch the models engage in real-time debates.
 
-This project leverages Modus for orchestrating AI models and Go as the programming language, making it an interactive and real-time AI debate experience.
-
-🚀 Project Overview
-Arg is designed to facilitate engaging and interactive AI debates. Users can select two AI models from multiple options (e.g., Gemini, GPT-4, Meta LLaMA) and assign them different personas. The debate occurs in a back-and-forth format, where the models argue different viewpoints on a given topic. After 8 rounds of debate, a third AI model acts as the judge to decide the winner based on the debate performance.
-
-💻 Technical Details
-Modus for Model Orchestration
-Modus is used to seamlessly orchestrate the communication between multiple AI models. The output from one model is fed as input into the next, creating a fluid and continuous debate process.
-
-Real-Time Data Storage
-Debate messages arestreamed and stored in PostgreSQL (via Azure Cosmos DB) for real-time updates. This ensures that frontend can track the ongoing debate without significant delays.
-
-📸 Debate Flow
-Here’s how the debate works internally:
-
-User Inputs Topic: The user selects a topic for the debate.
-Model Selection: Two AI models are selected, each with a unique persona.
-Debate Flow: The models debate in real-time, alternating their arguments.
-AI Judge Evaluation: After 8 rounds, a third AI model judges the debate.
-Winner Announcement: The winning model is decided based on the judge's evaluation.
-aidebateflow
-
-⚙️ Setup AI Models
-Note: For the hackathon, the available models are limited due to API rate limits. Please ensure to use the Gemini model as it has higher rate limits..
 
 ⚡ Getting Started
 To run this project locally, follow these steps:
